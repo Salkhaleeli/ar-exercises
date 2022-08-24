@@ -31,3 +31,4 @@ Store.create(
 
 @mens_stores.map { |store| puts "#{store.name}: #{store.annual_revenue}"}
 @womens_stores = Store.where(womens_apparel: true).where("annual_revenue < 1000000")
+puts @number_of_stores = Store.count
